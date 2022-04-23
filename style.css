@@ -17,14 +17,31 @@
 
 }
 
-.menu{
+header{
+    font-size: 16px;
+}
+
+.menu, .menu__buttons, .menu__list, .menu__image{
     display: flex;
     align-items: center;
     flex-direction: row;    
     justify-content: space-between;
     padding: 10px 50px;
-    
 }
+
+.menu__button{
+    border: none;
+    background: var(--red-color);
+    padding: 10px 18px 10px 18px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu p{
+    margin-right: 20px;
+}
+
 
 div ul{
     display: flex;
@@ -40,44 +57,43 @@ div ul li{
 
 div ul li .menu-itens{
     flex: auto;
+
 }
 
-.menu p{
-    margin-right: 20px;
-}
-
-.menu button{
-    border: none;
-    background: var(--red-color);
-    padding: 10px 18px 10px 18px;
-    border-radius: 8px;
-    color: #fff;
-    cursor: pointer;
-}
 
 .container{
     display: flex;
     flex-direction: column;
-    padding: 10px 20px;
+    padding: 96px 0;
     text-align: center;
-  
+    height: 407px; 
 }
 
-.container :first-child{
-    color: var(--red-color);
-    font-weight: 500;
+.container__text{
+    line-height: 30px;
 }
 
-.flex{
+.container__title{
+    margin-top: 24px;
+    margin-bottom: 36px;
+}
+
+
+.content{
     height: 288px;
     display: flex;
+    width : 100%;
     flex-direction: row;
     justify-content: center;
-    padding: 60px 0px 96px;
-    top: 487px;
+    padding: 0px 0px 96px;
 }
 
-.flexbox{
+.content__text, .main h2,.main p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content__flexbox{
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -87,14 +103,11 @@ div ul li .menu-itens{
     margin: 8px 0;
 }
 
-.flexbox h2{
-    color: var(--red-color);
+.content__title{
     font-size: 60px;
+    color: var(--red-color);
 }
 
-.main h5, .section h5{
-    color: var(--red-color);
-}
 /* 
 img{
    width: 1216px;
@@ -118,6 +131,7 @@ section .description{
     border-radius: 1px;
     margin: 24px 0px;
     text-align: left;
+    position: relative;
 }
 
 .section{
@@ -149,6 +163,12 @@ section .description{
 
 .description-job{
     display: flex;
+    position: absolute;
+    bottom: 20px;
+}
+
+.description-job p{
+    margin-right: 5rem;
 }
 
 footer{
